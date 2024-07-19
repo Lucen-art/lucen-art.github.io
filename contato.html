@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<header id="cabecalho" class="grupo">
+    <img src="imagens/imagens/logo_empresa.png" alt="Logo da empresa">
+    <nav id="menu-principal">
+        <ul class="grupo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a class="ativo"  href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <img src="imagens/imagens/foto_principal.jpg" alt="foto horizontal" id="fotoHorizontal">
+</header>
+    
+    <section id="conteudo">
+    <h1>Contacto</h1>
+    <p>Entre em contacto connosco preenchendo o formulário abaixo</p>
+
+    <form action="exercicio" method="submit">
+       
+    <div id="tabela"> 
+        <div id="nome">            
+            <label for="nome">Nome:</label> <br>
+            <input required type="text" id="nome"/>
+        </div>
+        <div id="empresa">
+            <label for="empresa">Empresa:</label> <br>
+            <input type="text" id="nome"/>
+        </div>
+    </div> 
+
+        <div>            
+            <label for="email">Email:</label> <br>
+            <input required type="email" id="email" size="60"/>
+        </div>
+        
+        <div id="telefoneDepartamento">
+            <div>
+                <label for="msg">Telefone:</label> <br>
+                <input required type="telefone" id="telefone" size="20" maxlength="9"/>
+            </div>
+            <div>
+                <label for="email">Departamento:</label> <br>
+                <input type="radio" checked /> <label for="ccom">Comercial</label>
+                <input type="radio" /> <label for="cfin">Financeiro</label>
+                <input type="radio" /> <label for="csup">Suporte</label>
+            </div>
+        </div>
+
+            <label for="cars">Assunto:</label> <br>
+            <select required id="assunto" size="">
+              <option value="volvo">--Selecione--</option>
+              <option value="saab">orçamento</option>
+              <option value="opel">dúvidas</option>
+              <option value="audi">solicitações</option>
+              <option value="opel">reclamações</option>
+              <option value="audi">outros</option>
+            </select>
+        
+        <div>
+            Mensagem 
+            <br>
+            <label for="msg"></label>
+            <textarea required name="mensagem" id="mensagem" rows="10" cols="60"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" /> <label for="cfem">Gostaria de receber a newsletter da empresa</label>
+        </div>
+
+        <br>
+
+        <div>
+            <button id="botao" type="submit">Enviar Mensagem</button>
+        </div>
+       
+    </form>
+    </section>
+
+<footer id="rodape">
+    <p id="contato">
+        7GabrielaLucena@exemplo.com
+    </p>
+    <p id="endereco">
+        Rua do endereço, 123, Bairro
+        <br>
+        253 666 999
+    </p>
+
+
+    <p id="copyright">
+        
+        Gabriela Lucena &copy; J+D UX/UI 01-24 Todos os Direitos Reservados.
+    </p>
+</footer>
+</body>
+</html>
